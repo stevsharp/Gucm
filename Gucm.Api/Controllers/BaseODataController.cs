@@ -1,29 +1,29 @@
 ﻿using Microsoft.AspNet.OData;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNet.OData.Query;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNet.OData.Routing;
 using System;
 using System.Linq.Expressions;
 using System.Linq;
+using Gucm.Data.EntityFramework.BaseDbContext;
 
 namespace Gucm.Api.Controllers
 {
     [Authorize]
     public abstract class BaseODataController : ODataController
     {
-        protected readonly DbContext dbContext;
+        protected readonly BaseDbContext dbContext;
 
-        protected BaseODataController(DbContext dbContext) => this.dbContext = dbContext;
+        protected BaseODataController(BaseDbContext dbContext) => this.dbContext = dbContext;
     }
 
     [Authorize]
     public abstract class BaseODataController<T> : ODataController where T : class
     {
-        protected readonly DbContext dbContext;
+        protected readonly BaseDbContext dbContext;
 
-        protected BaseODataController(DbContext dbContext) => this.dbContext = dbContext;
+        protected BaseODataController(BaseDbContext dbContext) => this.dbContext = dbContext;
 
         [ODataRoute]
         [EnableQuery(AllowedQueryOptions = AllowedQueryOptions.All)]

@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Gucm.Data.EntityFramework\Gucm.Data.EntityFramework.csproj" />
     <ProjectReference Include="..\Gucm.Domain\Gucm.Domain.csproj" />
   </ItemGroup>
 
