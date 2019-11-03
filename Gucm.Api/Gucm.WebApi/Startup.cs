@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using Common.Api.Extensions;
+using Common.Api.Middlewares;
+using Common.Api.Validation;
+using FluentValidation.AspNetCore;
+using HealthChecks.UI.Client;
+using Microsoft.AspNet.OData.Extensions;
+using Microsoft.AspNet.OData.Formatter;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 
 namespace Gucm.WebApi
 {
@@ -24,7 +28,44 @@ namespace Gucm.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.ConfigureCors();
+            services.AddOData();
+            services.AddODataQueryFilter();
+
+            services.AddMvc(options =>
+            {
+                options.Filters.Add(typeof(ValidatorActionFilter));
+                options.EnableEndpointRouting = false;
+            })
+            .AddJsonOptions(options =>
+            {
+                options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Include;
+                options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+            })
+            .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+            .AddFluentValidation(fvc => fvc.RegisterValidatorsFromAssemblyContaining<Startup>());
+
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
+
+            services.AddMvcCore(options =>
+            {
+                foreach (var outputFormatter in options.OutputFormatters.OfType<ODataOutputFormatter>().Where(_ => _.SupportedMediaTypes.Count == 0))
+                {
+                    outputFormatter.SupportedMediaTypes.Add(new Microsoft.Net.Http.Headers.MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
+                }
+                foreach (var inputFormatter in options.InputFormatters.OfType<ODataInputFormatter>().Where(_ => _.SupportedMediaTypes.Count == 0))
+                {
+                    inputFormatter.SupportedMediaTypes.Add(new Microsoft.Net.Http.Headers.MediaTypeHeaderValue("application/prs.odatatestxx-odata"));
+                }
+            });
+
+            services.AddSwaggerGen(x => {
+                x.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "Yield Api", Description = "Yield Api" });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,7 +76,28 @@ namespace Gucm.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseMiddleware<ErrorHandlerMiddleware>();
+            app.UseCors("Cors");
+            app.UseAuthentication();
             app.UseMvc();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.RoutePrefix = "swagger";
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Core API");
+            });
+
+
+            //app.UseHealthChecks("/health", new HealthCheckOptions()
+            //{
+            //    Predicate = _ => true,
+            //    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+
+            //});
+
+            app.UseHealthChecksUI();
+
         }
     }
 }

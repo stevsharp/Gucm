@@ -29,4 +29,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Api\Gucm.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\OData\" />
+    <Folder Include="Logs\" />
+  </ItemGroup>
+
 </Project>
