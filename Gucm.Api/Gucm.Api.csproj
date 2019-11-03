@@ -6,6 +6,8 @@
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
+    <AssemblyName>Common.Api</AssemblyName>
+    <RootNamespace>Common.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Gucm.Data.EntityFramework\Gucm.Data.EntityFramework.csproj" />
-    <ProjectReference Include="..\Gucm.Domain\Gucm.Domain.csproj" />
+    <ProjectReference Include="..\Gucm.Data.EntityFramework\Common.Data.EntityFramework.csproj" />
+    <ProjectReference Include="..\Gucm.Domain\Common.Domain.csproj" />
   </ItemGroup>
 
 </Project>
