@@ -10,7 +10,7 @@ using Gucm.Data.EntityFramework.BaseDbContext;
 
 namespace Gucm.Api.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public abstract class BaseODataController : ODataController
     {
         protected readonly BaseDbContext dbContext;
@@ -18,7 +18,7 @@ namespace Gucm.Api.Controllers
         protected BaseODataController(BaseDbContext dbContext) => this.dbContext = dbContext;
     }
 
-    [Authorize]
+    //[Authorize]
     public abstract class BaseODataController<T> : ODataController where T : class
     {
         protected readonly BaseDbContext dbContext;

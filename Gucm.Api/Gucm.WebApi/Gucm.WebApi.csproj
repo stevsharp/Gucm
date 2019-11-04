@@ -31,10 +31,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Common.Api\Gucm.Api.csproj" />
+    <ProjectReference Include="..\Gucm.Data\Gucm.Data.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\OData\" />
     <Folder Include="Logs\" />
   </ItemGroup>
 

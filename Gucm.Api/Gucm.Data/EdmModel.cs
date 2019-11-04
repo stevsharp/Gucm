@@ -12,6 +12,15 @@ namespace Gucm.Data
         {
             var builder = new ODataConventionModelBuilder(serviceProvider);
 
+            builder.EntitySet<GdprTable>("GdprTable")
+                              .EntityType
+                              .Filter()
+                              .Count()
+                              .Expand()
+                              .OrderBy()
+                              .Page()
+                              .Select();
+
             builder.EnableLowerCamelCase();
 
             return builder.GetEdmModel();

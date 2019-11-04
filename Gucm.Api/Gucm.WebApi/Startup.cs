@@ -3,6 +3,7 @@ using Common.Api.Extensions;
 using Common.Api.Middlewares;
 using Common.Api.Validation;
 using FluentValidation.AspNetCore;
+using Gucm.Data;
 using HealthChecks.UI.Client;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNet.OData.Formatter;
@@ -66,6 +67,8 @@ namespace Gucm.WebApi
                 x.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "Yield Api", Description = "Yield Api" });
             });
 
+            services.RegisterDataServices(Configuration);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -88,6 +91,12 @@ namespace Gucm.WebApi
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Core API");
             });
 
+            app.UseMvc(routebuilder =>
+            {
+                routebuilder.MapODataServiceRoute("odata", "odata", EdmModel.GetEdmModel(app.ApplicationServices));
+                // Workaround: https://github.com/OData/WebApi/issues/1175
+                routebuilder.EnableDependencyInjection();
+            });
 
             //app.UseHealthChecks("/health", new HealthCheckOptions()
             //{
