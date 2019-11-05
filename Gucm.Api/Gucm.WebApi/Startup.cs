@@ -6,6 +6,7 @@ using FluentValidation.AspNetCore;
 using Gucm.Application;
 using Gucm.Application.Validation;
 using Gucm.Data;
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNet.OData.Formatter;
 using Microsoft.AspNetCore.Builder;
@@ -42,6 +43,7 @@ namespace Gucm.WebApi
             {
                 options.SerializerSettings.DefaultValueHandling = DefaultValueHandling.Include;
                 options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
             })
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
             .AddFluentValidation(fv => {
@@ -73,6 +75,31 @@ namespace Gucm.WebApi
             services.RegisterApplicationServices(Configuration);
 
             services.AddSignalR();
+
+            /* Configuration for authorization */
+
+            services
+                .AddMvcCore()
+                .AddAuthorization(options =>
+                {
+                   // Policy here 
+                });
+
+
+            services
+               .AddAuthentication("Bearer")
+               .AddIdentityServerAuthentication(options =>
+               {
+                   var settings = new IdentityServerAuthenticationOptions();
+
+                   Configuration.Bind("IdentityServerSettings", settings);
+
+                   options.Authority = settings.Authority;
+                   options.RequireHttpsMetadata = settings.RequireHttpsMetadata;
+                   options.ApiName = settings.ApiName;
+                   options.ApiSecret = settings.ApiSecret;
+               });
+            /********************************************* */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
