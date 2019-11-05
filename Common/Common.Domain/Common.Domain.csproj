@@ -4,10 +4,4 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Validation\" />
-    <Folder Include="Specification\" />
-  </ItemGroup>
-
 </Project>
