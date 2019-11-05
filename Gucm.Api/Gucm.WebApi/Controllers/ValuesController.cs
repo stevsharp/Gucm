@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Gucm.Api.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gucm.WebApi.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase

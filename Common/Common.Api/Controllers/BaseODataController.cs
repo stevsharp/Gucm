@@ -6,7 +6,7 @@ using Microsoft.AspNet.OData.Routing;
 using System;
 using System.Linq.Expressions;
 using System.Linq;
-using Gucm.Data.EntityFramework.BaseDbContext;
+using Gucm.Data.EntityFramework;
 
 namespace Gucm.Api.Controllers
 {

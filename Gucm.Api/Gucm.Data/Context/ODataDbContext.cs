@@ -1,4 +1,5 @@
-﻿using Gucm.Data.EntityFramework.BaseDbContext;
+﻿
+using Gucm.Data.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 
 namespace Gucm.Data.Context

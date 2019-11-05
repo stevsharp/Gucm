@@ -3,12 +3,12 @@ using Common.Api.Extensions;
 using Common.Api.Middlewares;
 using Common.Api.Validation;
 using FluentValidation.AspNetCore;
+using Gucm.Application;
+using Gucm.Application.Validation;
 using Gucm.Data;
-using HealthChecks.UI.Client;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNet.OData.Formatter;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -44,7 +44,9 @@ namespace Gucm.WebApi
                 options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
             })
             .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-            .AddFluentValidation(fvc => fvc.RegisterValidatorsFromAssemblyContaining<Startup>());
+            .AddFluentValidation(fv => {
+                fv.RegisterValidatorsFromAssemblyContaining<CreateGdprValidation>();
+             });
 
             services.Configure<ApiBehaviorOptions>(options =>
             {
@@ -68,7 +70,9 @@ namespace Gucm.WebApi
             });
 
             services.RegisterDataServices(Configuration);
+            services.RegisterApplicationServices(Configuration);
 
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
