@@ -10,7 +10,7 @@ using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Gucm.Data.EntityFramework.BaseDbContext
+namespace Gucm.Data.EntityFramework
 {
     public abstract class BaseDbContext : DbContext
     {
