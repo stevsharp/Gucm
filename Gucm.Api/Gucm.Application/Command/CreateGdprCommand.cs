@@ -1,11 +1,10 @@
 ﻿
 using Gucm.Domain.Models;
 using MediatR;
-using System.Threading.Tasks;
 
 namespace Gucm.Application.ViewModel
 {
-    public sealed class CreateGdprCommand : IRequest<BusinessResult<bool>>
+    public sealed class CreateGdprCommand : IRequest<BusinessResult<int>>
     {
         public int Id { get; set; }
 
