@@ -16,7 +16,7 @@ namespace Gucm.WebApi.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost("create")]
+        [HttpPost()]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Create(CreateGdprCommand request)
@@ -27,5 +27,27 @@ namespace Gucm.WebApi.Controllers
         }
 
 
+        [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Update(int id , UpdateGdprCommand request)
+        {
+            if (id != request.Id)
+                return BadRequest();
+
+            var result = await _mediator.Send(request);
+
+            return NoContentOrBadRequest(result);
+        }
+
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _mediator.Send(new DeleteGdprCommand() { Id = id } );
+
+            return NoContentOrBadRequest(result);
+        }
     }
 }
