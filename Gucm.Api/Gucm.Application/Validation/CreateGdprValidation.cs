@@ -7,10 +7,10 @@ namespace Gucm.Application.Validation
     {
         public CreateGdprValidation()
         {
-            RuleFor(x => x.Id)
-                .NotNull()
-                .WithMessage("Please select Id.")
-                .GreaterThanOrEqualTo(0).WithMessage("Test must not be less than or equal to 0");
+            //RuleFor(x => x.Id)
+            //    .NotNull()
+            //    .WithMessage("Please select Id.")
+            //    .GreaterThanOrEqualTo(0).WithMessage("Test must not be less than or equal to 0");
 
             RuleFor(x => x.Gdpr).NotEmpty().WithMessage("Please select a Gdpr.");
         }

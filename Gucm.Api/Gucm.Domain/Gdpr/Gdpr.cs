@@ -7,15 +7,12 @@ namespace Gucm.Domain.Gdpr
 {
     public class GdprDomain : EntityBase, IAggregateRoot
     {
+        private GdprDomain() {}
 
-        protected GdprDomain() { }
-
-        public GdprDomain(int newId , string Gdpr)
+        public GdprDomain(string Gdpr)
         {
-            Check.That(newId == 0, () => { throw new ArgumentException("Id cannot be 0."); });
-            Check.That(string.IsNullOrWhiteSpace(Gdpr), () => { throw new ArgumentException("Gdpr cannot be null."); });
+            Check.That(!string.IsNullOrWhiteSpace(Gdpr), () => { throw new ArgumentException("Gdpr cannot be null."); });
 
-            this.Id = newId;
             this.Gdpr = Gdpr;
         }
 

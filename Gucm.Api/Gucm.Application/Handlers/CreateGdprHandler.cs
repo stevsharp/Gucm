@@ -25,7 +25,7 @@ namespace Gucm.Application.Handlers
         {
             var result = new BusinessResult<int>();
 
-            var domain = new GdprDomain(request.Id, request.Gdpr);
+            var domain = new GdprDomain(request.Gdpr);
 
             var bcErrors = domain.GetBrokenRules();
             if (bcErrors.Count > 0)
