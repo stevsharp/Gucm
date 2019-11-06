@@ -20,12 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repository\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Common\Common.Data.EntityFramework\Common.Data.EntityFramework.csproj" />
     <ProjectReference Include="..\..\Common\Common.Infrastructure\Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\Gucm.Domain\Gucm.Domain.csproj" />
   </ItemGroup>
 
 </Project>

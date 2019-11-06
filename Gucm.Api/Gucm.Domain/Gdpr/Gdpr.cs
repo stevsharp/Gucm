@@ -20,10 +20,12 @@ namespace Gucm.Domain.Gdpr
         }
 
         public virtual string Gdpr { get; private set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         protected override void Validate()
         {
-            throw new NotImplementedException();
+            // Add BC rules 
         }
     }
 }

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Gucm.Data.Context;
 using Common.Infrastructure.UnitOfWork;
 
-namespace Gucm.Data.UnitOfWork
+namespace Gucm.Data
 {
     public class UnitOfWork : IUnitOfWork
     {

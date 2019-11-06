@@ -1,4 +1,7 @@
-﻿using Gucm.Data.Context;
+﻿using Common.Infrastructure.UnitOfWork;
+using Gucm.Data.Context;
+using Gucm.Data.Repository;
+using Gucm.Domain.Gdpr;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -38,6 +41,9 @@ namespace Gucm.Data
 
                 }).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             });
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IGdprDomainRepository, GdprDomainRepository>();
 
             return services;
         }
