@@ -1,0 +1,14 @@
+﻿  var connectionString = "mongodb://localhost:27017/ContractDB";
+                IDbFactory dbFactory = new DbFactory();
+                //IMongoDatabase mongoDatabase = dbFactory.GetDatabase(connectionString);
+                IRepositoryFactory repositoryFactory = new RepositoryFactory(dbFactory);
+                IRepository<Contract> repository = repositoryFactory.Create<Contract>(new RepositoryOptions(connectionString,"Contract"));
+
+                var newEntry = new Contract { Id = 1, CustomerName = "CustomerName", CustomerLName = "CustomerLName" };
+                repository.InsertOneAsync(newEntry).Wait();
+
+                newEntry.CustomerName = "Customer";
+
+                repository.UpsertOneAsync(x => x.Id == 1, newEntry).Wait();
+
+                var list = repository.GetAll();
