@@ -1,11 +1,15 @@
-﻿
-using Gucm.Domain.Models;
-using MediatR;
+﻿using Gucm.Application.Validation;
 
 namespace Gucm.Application.ViewModel
 {
-    public sealed class CreateGdprCommand : IRequest<BusinessResult<int>>
+
+    public sealed class CreateGdprCommand : GdprCommand // IRequest<BusinessResult<int>>
     {
-        public string Gdpr { get; set; }
+        public override bool IsValid()
+        {
+            var validation = new CreateGdprValidation().Validate(this);
+
+            return ValidationResult.IsValid;
+        }
     }
 }

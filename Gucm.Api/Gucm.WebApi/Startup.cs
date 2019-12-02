@@ -2,11 +2,15 @@
 using Common.Api.Extensions;
 using Common.Api.Middlewares;
 using Common.Api.Validation;
+using Common.Infrastructure.Bus;
+using Common.Infrastructure.Notifications;
+using Common.ServiceBus;
 using FluentValidation.AspNetCore;
 using Gucm.Application;
 using Gucm.Application.Validation;
 using Gucm.Data;
 using IdentityServer4.AccessTokenValidation;
+using MediatR;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNet.OData.Formatter;
 using Microsoft.AspNetCore.Builder;
@@ -71,10 +75,14 @@ namespace Gucm.WebApi
                 x.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info { Title = "Yield Api", Description = "Yield Api" });
             });
 
+
+            services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
+            services.AddScoped<IMediatorHandler, InMemoryBus>();
             services.RegisterDataServices(Configuration);
             services.RegisterApplicationServices(Configuration);
 
             services.AddSignalR();
+
 
             /* Configuration for authorization */
 

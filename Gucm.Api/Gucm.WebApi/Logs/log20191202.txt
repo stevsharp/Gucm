@@ -1,0 +1,26 @@
+2019-12-02 16:16:50.859 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-02 16:16:52.297 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/  
+2019-12-02 16:16:52.483 +02:00 [INF] Request finished in 188.69ms 404 
+2019-12-02 16:17:05.116 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger  
+2019-12-02 16:17:05.120 +02:00 [INF] Request finished in 4.372ms 301 
+2019-12-02 16:17:05.128 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/index.html  
+2019-12-02 16:17:05.300 +02:00 [INF] Request finished in 172.0024ms 200 text/html
+2019-12-02 16:17:05.333 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/swagger-ui.css  
+2019-12-02 16:17:05.333 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/swagger-ui-bundle.js  
+2019-12-02 16:17:05.336 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/swagger-ui-standalone-preset.js  
+2019-12-02 16:17:05.372 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2019-12-02 16:17:05.372 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2019-12-02 16:17:05.372 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2019-12-02 16:17:05.382 +02:00 [INF] Request finished in 46.2061ms 200 application/javascript
+2019-12-02 16:17:05.382 +02:00 [INF] Request finished in 49.5858ms 200 text/css
+2019-12-02 16:17:05.382 +02:00 [INF] Request finished in 49.6181ms 200 application/javascript
+2019-12-02 16:17:05.579 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/v1/swagger.json  
+2019-12-02 16:17:05.604 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/favicon-32x32.png  
+2019-12-02 16:17:05.605 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2019-12-02 16:17:05.605 +02:00 [INF] Request finished in 1.7874ms 200 image/png
+2019-12-02 16:17:05.704 +02:00 [INF] Request finished in 124.642ms 200 application/json;charset=utf-8
+2019-12-02 16:17:20.665 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:13231/api/TestConntroller application/json;odata.metadata=minimal;odata.streaming=true 45
+2019-12-02 16:17:20.667 +02:00 [INF] CORS policy execution successful.
+2019-12-02 16:17:20.705 +02:00 [INF] Route matched with {action = "Create", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi)
+2019-12-02 16:17:20.832 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) with arguments (["Gucm.Application.ViewModel.CreateGdprCommand"]) - Validation state: "Valid"
+2019-12-02 16:17:24.840 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
