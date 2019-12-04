@@ -5,7 +5,6 @@ using Gucm.Domain.Models;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
-using Gucm.Application;
 using Common.Infrastructure.Bus;
 using Common.Infrastructure.Notifications;
 using Gucm.Application.Events;

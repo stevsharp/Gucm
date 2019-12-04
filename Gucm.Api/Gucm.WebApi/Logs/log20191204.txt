@@ -79,3 +79,20 @@ VALUES (@p0);
 SELECT [Id]
 FROM [dbo].[GdprTable]
 WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-12-04 14:29:22.728 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-04 14:29:23.493 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:13231/api/TestConntroller application/json;odata.metadata=minimal;odata.streaming=true 49
+2019-12-04 14:29:23.499 +02:00 [INF] CORS policy execution successful.
+2019-12-04 14:29:23.645 +02:00 [INF] Route matched with {action = "Create", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi)
+2019-12-04 14:29:23.843 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) with arguments (["Gucm.Application.ViewModel.CreateGdprCommand"]) - Validation state: "Valid"
+2019-12-04 14:29:25.910 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-04 14:29:26.269 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[GdprTable] ([Gdpr])
+VALUES (@p0);
+SELECT [Id]
+FROM [dbo].[GdprTable]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-12-04 14:29:37.047 +02:00 [INF] Executed action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13197.321300000001ms.
+2019-12-04 14:29:37.059 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-12-04 14:29:37.127 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) in 13479.446100000001ms
+2019-12-04 14:29:37.136 +02:00 [INF] Request finished in 13644.5153ms 200 application/json; charset=utf-8
