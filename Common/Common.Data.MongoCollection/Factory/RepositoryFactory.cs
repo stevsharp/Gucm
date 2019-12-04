@@ -1,8 +1,4 @@
-﻿using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace Common.Data.MongoCollection
 {
@@ -13,16 +9,14 @@ namespace Common.Data.MongoCollection
 
         public RepositoryFactory(IDbFactory dbFactory)
         {
-            if (dbFactory == null)
-                throw new ArgumentNullException(nameof(dbFactory));
-            _dbFactory = dbFactory;
+            _dbFactory = dbFactory ?? throw new ArgumentNullException(nameof(dbFactory));
         }
 
         public IRepository<TEntity> Create<TEntity>(RepositoryOptions options)
         {
             if (options == null) throw new ArgumentNullException(nameof(options));
 
-            var db = _dbFactory.GetDatabase(options.ConnectionString);
+            var db = _dbFactory.GetDatabase(options.ConnectionString, options.DatabaseName);
             return new Repository<TEntity>(db.GetCollection<TEntity>(options.CollectionName));
         }
     }

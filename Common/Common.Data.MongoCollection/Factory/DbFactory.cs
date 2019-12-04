@@ -1,21 +1,19 @@
 ﻿using MongoDB.Driver;
-using MongoDB.Driver.Core.Configuration;
 using System;
 
 namespace Common.Data.MongoCollection
 {
-
     public class DbFactory : IDbFactory
     {
-        public IMongoDatabase GetDatabase(string connectionString)
+        public MongoClient dbClient { get; protected set; }
+        public IMongoDatabase GetDatabase(string connectionString, string databaseName)
         {
             if (string.IsNullOrWhiteSpace(connectionString))
                 throw new ArgumentNullException(nameof(connectionString));
 
-            var dbClient = new MongoClient(connectionString);
+            dbClient = new MongoClient(connectionString);
 
-            var connStr = new ConnectionString(connectionString);
-            var db = dbClient.GetDatabase(connStr.DatabaseName);
+            var db = dbClient.GetDatabase(databaseName);
 
             return db;
         }
