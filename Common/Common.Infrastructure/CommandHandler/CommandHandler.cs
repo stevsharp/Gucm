@@ -3,6 +3,8 @@ using Common.Infrastructure.Comands;
 using Common.Infrastructure.Notifications;
 using Common.Infrastructure.UnitOfWork;
 using MediatR;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Gucm.Application
 {
@@ -23,17 +25,17 @@ namespace Gucm.Application
         protected void NotifyValidationErrors(Command message)
         {
             foreach (var error in message.ValidationResult.Errors)
-            {
                 _bus.RaiseEvent(new DomainNotification(message.MessageType, error.ErrorMessage));
-            }
+            
         }
 
-        public bool Commit()
+        public async Task<bool> Commit(CancellationToken cancellationToken)
         {
             if (_notifications.HasNotifications()) return false;
-            if (_uow.SaveChanges() > 0) return true;
+            if (await _uow.SaveChangesAsync(cancellationToken) > 0) return true;
 
             _bus.RaiseEvent(new DomainNotification("Commit", "We had a problem during saving your data."));
+
             return false;
         }
     }

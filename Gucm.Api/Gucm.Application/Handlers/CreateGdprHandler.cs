@@ -12,7 +12,7 @@ using Gucm.Application.Events;
 
 namespace Gucm.Application.Handlers
 {
-    public class CreateGdprHandler : CommandHandler,  IRequestHandler<CreateGdprCommand, BusinessResult<bool>>
+    public class CreateGdprHandler : CommandHandler,  IRequestHandler<CreateGdprCommand, bool>
     {
         private readonly IGdprDomainRepository _gdprDomainRepository;
 
@@ -23,7 +23,7 @@ namespace Gucm.Application.Handlers
             _gdprDomainRepository = gdprDomainRepository;
         }
 
-        public async Task<BusinessResult<bool>> Handle(CreateGdprCommand request, CancellationToken cancellationToken)
+        public async Task<bool> Handle(CreateGdprCommand request, CancellationToken cancellationToken)
         {
             var result = new BusinessResult<bool>();
 
@@ -41,14 +41,19 @@ namespace Gucm.Application.Handlers
             if (bcErrors.Count > 0)
             {
                 result.AddBrokenRule(bcErrors);
+
+                foreach (var errBc in bcErrors)
+                    request.ValidationResult.Errors.Add(new FluentValidation.Results.ValidationFailure(errBc.Rule, errBc.Property));
+                
                 return false;
             }
 
             _gdprDomainRepository.Add(domain);
 
-            if (Commit())
+            if (await Commit(cancellationToken))
                 _bus.RaiseEvent(new GdprCreated(domain.Id));
 
+            
             result.Model = true;
 
             return true;

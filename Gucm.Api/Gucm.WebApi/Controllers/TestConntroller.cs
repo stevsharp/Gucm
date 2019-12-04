@@ -24,7 +24,7 @@ namespace Gucm.WebApi.Controllers
 
             //return OkOrBadRequest(result, result.Model);
 
-            return Ok();
+            return Response(request);
         }
 
 

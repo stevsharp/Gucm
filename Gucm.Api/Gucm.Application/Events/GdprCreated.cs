@@ -1,7 +1,6 @@
-﻿using Common.Infrastructure.Events;
+﻿using Common.Domain.Interface;
+using Common.Infrastructure.Events;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Gucm.Application.Events
 {
@@ -10,6 +9,8 @@ namespace Gucm.Application.Events
         public GdprCreated(int id )
         {
             Id = id;
+
+            this.AggregateId = Guid.NewGuid();
         }
 
         public int Id { get; }

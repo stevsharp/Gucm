@@ -32,6 +32,23 @@ namespace Gucm.Api.Controllers
             return (!_notifications.HasNotifications());
         }
 
+        protected new IActionResult Response(object result = null)
+        {
+            if (IsValidOperation())
+            {
+                return Ok(new
+                {
+                    success = true,
+                    data = result
+                });
+            }
+
+            return BadRequest(new
+            {
+                success = false,
+                errors = _notifications.GetNotifications().Select(n => n.Value)
+            });
+        }
 
         protected void NotifyModelStateErrors()
         {

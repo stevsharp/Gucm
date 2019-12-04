@@ -4,7 +4,7 @@ using System;
 
 namespace Common.Infrastructure
 {
-    public abstract class Message : IRequest<BusinessResult<bool>>
+    public abstract class Message : IRequest<bool>
     {
         public string MessageType { get; protected set; }
         public Guid AggregateId { get; protected set; }

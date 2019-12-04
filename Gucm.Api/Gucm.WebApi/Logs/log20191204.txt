@@ -1,0 +1,81 @@
+2019-12-04 13:54:42.370 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-04 13:54:43.471 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/  
+2019-12-04 13:54:43.471 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger  
+2019-12-04 13:54:43.661 +02:00 [INF] Request finished in 192.3466ms 0 
+2019-12-04 13:54:43.680 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/index.html  
+2019-12-04 13:54:43.685 +02:00 [INF] Request finished in 216.302ms 301 
+2019-12-04 13:54:43.857 +02:00 [INF] Request finished in 176.761ms 200 text/html
+2019-12-04 13:54:43.889 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/swagger-ui.css  
+2019-12-04 13:54:43.895 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/swagger-ui-standalone-preset.js  
+2019-12-04 13:54:43.895 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/swagger-ui-bundle.js  
+2019-12-04 13:54:43.929 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2019-12-04 13:54:43.929 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2019-12-04 13:54:43.939 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2019-12-04 13:54:43.942 +02:00 [INF] Request finished in 47.5584ms 200 application/javascript
+2019-12-04 13:54:43.942 +02:00 [INF] Request finished in 53.0011ms 200 text/css
+2019-12-04 13:54:43.942 +02:00 [INF] Request finished in 47.6295ms 200 application/javascript
+2019-12-04 13:54:44.141 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/v1/swagger.json  
+2019-12-04 13:54:44.261 +02:00 [INF] Request finished in 120.6759ms 200 application/json;charset=utf-8
+2019-12-04 13:54:53.748 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:13231/api/TestConntroller application/json;odata.metadata=minimal;odata.streaming=true 45
+2019-12-04 13:54:53.750 +02:00 [INF] CORS policy execution successful.
+2019-12-04 13:54:53.789 +02:00 [INF] Route matched with {action = "Create", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi)
+2019-12-04 13:54:53.913 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) with arguments (["Gucm.Application.ViewModel.CreateGdprCommand"]) - Validation state: "Valid"
+2019-12-04 13:55:02.812 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-04 13:55:03.925 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[GdprTable] ([Gdpr])
+VALUES (@p0);
+SELECT [Id]
+FROM [dbo].[GdprTable]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-12-04 13:56:00.830 +02:00 [INF] Executed action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi), returned result Microsoft.AspNetCore.Mvc.OkResult in 66912.3126ms.
+2019-12-04 13:56:00.991 +02:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 200
+2019-12-04 13:56:01.083 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) in 67288.7371ms
+2019-12-04 13:56:05.699 +02:00 [INF] Request finished in 71950.8535ms 200 
+2019-12-04 13:59:31.782 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-04 13:59:32.602 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:13231/api/TestConntroller application/json;odata.metadata=minimal;odata.streaming=true 46
+2019-12-04 13:59:32.606 +02:00 [INF] CORS policy execution successful.
+2019-12-04 13:59:32.738 +02:00 [INF] Route matched with {action = "Create", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi)
+2019-12-04 13:59:32.930 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) with arguments (["Gucm.Application.ViewModel.CreateGdprCommand"]) - Validation state: "Valid"
+2019-12-04 13:59:36.903 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-04 13:59:47.167 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[GdprTable] ([Gdpr])
+VALUES (@p0);
+SELECT [Id]
+FROM [dbo].[GdprTable]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-12-04 14:00:03.438 +02:00 [INF] Executed action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30502.205100000003ms.
+2019-12-04 14:00:03.450 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-12-04 14:00:03.517 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) in 30777.4624ms
+2019-12-04 14:00:03.523 +02:00 [INF] Request finished in 30922.6999ms 200 application/json; charset=utf-8
+2019-12-04 14:06:23.972 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-04 14:06:24.768 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:13231/api/TestConntroller application/json;odata.metadata=minimal;odata.streaming=true 47
+2019-12-04 14:06:24.775 +02:00 [INF] CORS policy execution successful.
+2019-12-04 14:06:24.917 +02:00 [INF] Route matched with {action = "Create", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi)
+2019-12-04 14:06:25.133 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) with arguments (["Gucm.Application.ViewModel.CreateGdprCommand"]) - Validation state: "Valid"
+2019-12-04 14:06:26.894 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-04 14:06:30.203 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[GdprTable] ([Gdpr])
+VALUES (@p0);
+SELECT [Id]
+FROM [dbo].[GdprTable]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2019-12-04 14:06:49.580 +02:00 [INF] Executed action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24440.016ms.
+2019-12-04 14:06:49.594 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-12-04 14:06:49.666 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) in 24747.2125ms
+2019-12-04 14:06:49.672 +02:00 [INF] Request finished in 24906.6119ms 200 application/json; charset=utf-8
+2019-12-04 14:13:02.134 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-04 14:13:02.917 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:13231/api/TestConntroller application/json;odata.metadata=minimal;odata.streaming=true 47
+2019-12-04 14:13:02.922 +02:00 [INF] CORS policy execution successful.
+2019-12-04 14:13:03.055 +02:00 [INF] Route matched with {action = "Create", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi)
+2019-12-04 14:13:03.255 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) with arguments (["Gucm.Application.ViewModel.CreateGdprCommand"]) - Validation state: "Valid"
+2019-12-04 14:13:05.640 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-04 14:13:17.468 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[GdprTable] ([Gdpr])
+VALUES (@p0);
+SELECT [Id]
+FROM [dbo].[GdprTable]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
