@@ -20,3 +20,4 @@ namespace Gucm.IdentityServer.Configuration
         }
     }
 }
+}
