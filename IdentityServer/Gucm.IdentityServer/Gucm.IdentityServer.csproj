@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Configuration\" />
-    <Folder Include="Data\Mappings\" />
     <Folder Include="Middlewares\" />
     <Folder Include="Services\" />
   </ItemGroup>

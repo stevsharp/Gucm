@@ -31,9 +31,9 @@ namespace Gucm.IdentityServer
                 //.AddInMemoryApiResources(Config.GetApiResources())
                 //.AddInMemoryClients(Config.GetClients());
 
-            services
-                .AddAuthentication()
-                .AddIdentityServerAuthentication();
+            //services
+            //    .AddAuthentication()
+            //    .AddIdentityServerAuthentication();
 
         }
 
