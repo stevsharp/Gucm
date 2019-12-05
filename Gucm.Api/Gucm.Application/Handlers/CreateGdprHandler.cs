@@ -1,7 +1,6 @@
 ﻿using Common.Infrastructure.UnitOfWork;
 using Gucm.Application.ViewModel;
 using Gucm.Domain.Gdpr;
-using Gucm.Domain.Models;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
@@ -24,8 +23,6 @@ namespace Gucm.Application.Handlers
 
         public async Task<bool> Handle(CreateGdprCommand request, CancellationToken cancellationToken)
         {
-            var result = new BusinessResult<bool>();
-
             var commandIsValid = request.IsValid();
 
             if (!commandIsValid)
@@ -39,11 +36,10 @@ namespace Gucm.Application.Handlers
             var bcErrors = domain.GetBrokenRules();
             if (bcErrors.Count > 0)
             {
-                result.AddBrokenRule(bcErrors);
-
                 foreach (var errBc in bcErrors)
                     request.ValidationResult.Errors.Add(new FluentValidation.Results.ValidationFailure(errBc.Rule, errBc.Property));
-                
+
+                NotifyValidationErrors(request);
                 return false;
             }
 
@@ -53,8 +49,6 @@ namespace Gucm.Application.Handlers
                 _bus.RaiseEvent(new GdprCreated(domain.Id));
 
             
-            result.Model = true;
-
             return true;
         }
 
