@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SharedKernel.Http
 {
-    public class HttpRepository
+    public class HttpRepository : IHttpRepository
     {
         protected readonly HttpClient _httpClient;
 
@@ -15,7 +15,7 @@ namespace SharedKernel.Http
             _httpClient = httpClient;
         }
 
-        public virtual async  Task<string> Put<T>(T data, string endpoint, string authToken)
+        public virtual async Task<string> Put<T>(T data, string endpoint, string authToken)
         {
             if (!string.IsNullOrWhiteSpace(authToken))
                 _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authToken);
