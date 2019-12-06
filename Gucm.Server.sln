@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scr", "scr", "{8D895F05-1F2E-471F-B862-EC06100C2027}"
 EndProject
@@ -37,7 +37,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gucm.IdentityServer", "Iden
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.Data.MongoCollection", "Common\Common.Data.MongoCollection\Common.Data.MongoCollection.csproj", "{79576ABE-61D8-4EA6-908F-A85FAB0CBA1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.ServiceBus", "Common\Common.ServiceBus\Common.ServiceBus.csproj", "{69773A11-3EF4-432E-9CD9-96978B226A98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common.ServiceBus", "Common\Common.ServiceBus\Common.ServiceBus.csproj", "{69773A11-3EF4-432E-9CD9-96978B226A98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerShel", "PowerShel", "{1234A45D-4C0D-40E9-9D08-13805BD22621}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Documents\DockerScripts\docker-clean.ps1 = ..\..\..\Documents\DockerScripts\docker-clean.ps1
+		..\..\..\Documents\DockerScripts\docker-setup-development.ps1 = ..\..\..\Documents\DockerScripts\docker-setup-development.ps1
+		Portainer.txt = Portainer.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gucm.Api.Testing", "Test\Gucm.Api.Testing\Gucm.Api.Testing.csproj", "{C8856110-029A-4056-BC5E-54BBFA2F94F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gucm.Api.Integration.Testing", "Test\Gucm.Api.Integration.Testing\Gucm.Api.Integration.Testing.csproj", "{48773D82-8397-49DC-94FE-FE08DAEB8C31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +104,14 @@ Global
 		{69773A11-3EF4-432E-9CD9-96978B226A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69773A11-3EF4-432E-9CD9-96978B226A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69773A11-3EF4-432E-9CD9-96978B226A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8856110-029A-4056-BC5E-54BBFA2F94F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8856110-029A-4056-BC5E-54BBFA2F94F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8856110-029A-4056-BC5E-54BBFA2F94F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8856110-029A-4056-BC5E-54BBFA2F94F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48773D82-8397-49DC-94FE-FE08DAEB8C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48773D82-8397-49DC-94FE-FE08DAEB8C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48773D82-8397-49DC-94FE-FE08DAEB8C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48773D82-8397-49DC-94FE-FE08DAEB8C31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,6 +134,9 @@ Global
 		{0E453BB7-CD50-4DE6-A066-5A7334024910} = {D39C7996-572F-405B-8616-166100E1CDCA}
 		{79576ABE-61D8-4EA6-908F-A85FAB0CBA1C} = {B768FD7B-C8F7-4D29-96FB-AC11EB42CE19}
 		{69773A11-3EF4-432E-9CD9-96978B226A98} = {B768FD7B-C8F7-4D29-96FB-AC11EB42CE19}
+		{1234A45D-4C0D-40E9-9D08-13805BD22621} = {8D895F05-1F2E-471F-B862-EC06100C2027}
+		{C8856110-029A-4056-BC5E-54BBFA2F94F3} = {C71EFB0C-D2F0-497C-8EE7-259392179660}
+		{48773D82-8397-49DC-94FE-FE08DAEB8C31} = {C71EFB0C-D2F0-497C-8EE7-259392179660}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE6DFA83-F806-4B02-8F22-66DD732888B0}

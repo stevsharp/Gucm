@@ -10,4 +10,4 @@
         public bool RequireDigit { get; set; }
     }
 }
-}
+
