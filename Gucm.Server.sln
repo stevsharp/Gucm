@@ -50,6 +50,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gucm.Api.Testing", "Test\Gu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gucm.Api.Integration.Testing", "Test\Gucm.Api.Integration.Testing\Gucm.Api.Integration.Testing.csproj", "{48773D82-8397-49DC-94FE-FE08DAEB8C31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel", "Shared\SharedKernel\SharedKernel.csproj", "{4CA5480F-917C-4D47-AFC4-C40556154D14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -112,6 +114,10 @@ Global
 		{48773D82-8397-49DC-94FE-FE08DAEB8C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48773D82-8397-49DC-94FE-FE08DAEB8C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48773D82-8397-49DC-94FE-FE08DAEB8C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA5480F-917C-4D47-AFC4-C40556154D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA5480F-917C-4D47-AFC4-C40556154D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA5480F-917C-4D47-AFC4-C40556154D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA5480F-917C-4D47-AFC4-C40556154D14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,6 +143,7 @@ Global
 		{1234A45D-4C0D-40E9-9D08-13805BD22621} = {8D895F05-1F2E-471F-B862-EC06100C2027}
 		{C8856110-029A-4056-BC5E-54BBFA2F94F3} = {C71EFB0C-D2F0-497C-8EE7-259392179660}
 		{48773D82-8397-49DC-94FE-FE08DAEB8C31} = {C71EFB0C-D2F0-497C-8EE7-259392179660}
+		{4CA5480F-917C-4D47-AFC4-C40556154D14} = {8D895F05-1F2E-471F-B862-EC06100C2027}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE6DFA83-F806-4B02-8F22-66DD732888B0}
