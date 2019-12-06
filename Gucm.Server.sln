@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29424.173
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scr", "scr", "{8D895F05-1F2E-471F-B862-EC06100C2027}"
 EndProject
@@ -46,11 +46,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerShel", "PowerShel", "{
 		Portainer.txt = Portainer.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gucm.Api.Testing", "Test\Gucm.Api.Testing\Gucm.Api.Testing.csproj", "{C8856110-029A-4056-BC5E-54BBFA2F94F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gucm.Api.Testing", "Test\Gucm.Api.Testing\Gucm.Api.Testing.csproj", "{C8856110-029A-4056-BC5E-54BBFA2F94F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gucm.Api.Integration.Testing", "Test\Gucm.Api.Integration.Testing\Gucm.Api.Integration.Testing.csproj", "{48773D82-8397-49DC-94FE-FE08DAEB8C31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gucm.Api.Integration.Testing", "Test\Gucm.Api.Integration.Testing\Gucm.Api.Integration.Testing.csproj", "{48773D82-8397-49DC-94FE-FE08DAEB8C31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel", "Shared\SharedKernel\SharedKernel.csproj", "{4CA5480F-917C-4D47-AFC4-C40556154D14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedKernel", "Shared\SharedKernel\SharedKernel.csproj", "{4CA5480F-917C-4D47-AFC4-C40556154D14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,7 +95,6 @@ Global
 		{5AE563AF-7732-4121-A440-DDDB6B847B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AE563AF-7732-4121-A440-DDDB6B847B5B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0E453BB7-CD50-4DE6-A066-5A7334024910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E453BB7-CD50-4DE6-A066-5A7334024910}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E453BB7-CD50-4DE6-A066-5A7334024910}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E453BB7-CD50-4DE6-A066-5A7334024910}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79576ABE-61D8-4EA6-908F-A85FAB0CBA1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
