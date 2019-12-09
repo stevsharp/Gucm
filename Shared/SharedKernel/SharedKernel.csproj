@@ -11,8 +11,4 @@
     <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="2.2.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Exntensions\" />
-  </ItemGroup>
-
 </Project>
