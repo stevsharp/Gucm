@@ -1,35 +1,42 @@
-﻿using Common.Infrastructure.UnitOfWork;
+﻿using Common.Infrastructure.Bus;
+using Common.Infrastructure.Notifications;
+using Common.Infrastructure.UnitOfWork;
 using Gucm.Application.ViewModel;
 using Gucm.Domain.Gdpr;
-using Gucm.Domain.Models;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace Gucm.Application.Handlers
 {
-    public class UpdateGdprHandler : IRequestHandler<UpdateGdprCommand, BusinessResult<bool>>
+    public class UpdateGdprHandler : CommandHandler,  IRequestHandler<UpdateGdprCommand, bool>
     {
-        private readonly IUnitOfWork _unitOfWork;
-
         private readonly IGdprDomainRepository _gdprDomainRepository;
 
-        public UpdateGdprHandler(IUnitOfWork unitOfWork, IGdprDomainRepository gdprDomainRepository)
+        public UpdateGdprHandler(IUnitOfWork uow, IGdprDomainRepository gdprDomainRepository,
+            IMediatorHandler bus, INotificationHandler<DomainNotification> notifications)
+            : base(uow, bus, notifications)
         {
-            _unitOfWork = unitOfWork;
-
             _gdprDomainRepository = gdprDomainRepository;
         }
 
-        public async Task<BusinessResult<bool>> Handle(UpdateGdprCommand request, CancellationToken cancellationToken)
+        public async Task<bool> Handle(UpdateGdprCommand request, CancellationToken cancellationToken)
         {
-            var result = new BusinessResult<bool>();
+            var commandIsValid = request.IsValid();
+
+            if (!commandIsValid)
+            {
+                NotifyValidationErrors(request);
+                return false;
+            }
 
             var updatedDomain = _gdprDomainRepository.FindBy(request.Id);
             if (updatedDomain == null)
             {
-                result.AddBrokenRule(new BusinessError("Record does not exist"));
-                return result;
+                request.ValidationResult.Errors.Add(new FluentValidation.Results.ValidationFailure("DB Entry", "Record not found"));
+
+                NotifyValidationErrors(request);
+                return false;
             }
 
             updatedDomain.UpdateFields(request.Id, request.Gdpr);
@@ -37,17 +44,23 @@ namespace Gucm.Application.Handlers
             var bcErrors = updatedDomain.GetBrokenRules();
             if (bcErrors.Count > 0)
             {
-                result.AddBrokenRule(bcErrors);
-                return result;
+                foreach (var errBc in bcErrors)
+                    request.ValidationResult.Errors.Add(new FluentValidation.Results.ValidationFailure(errBc.Rule, errBc.Property));
+
+                NotifyValidationErrors(request);
+                return false;
             }
 
             _gdprDomainRepository.Update(updatedDomain);
 
-            await _unitOfWork.SaveChangesAsync(cancellationToken);
+            if (await Commit(cancellationToken))
+            {
+                // Raise Event
 
-            result.Model = true;
+            }
 
-            return result;
+            return true;
+
         }
     }
 }

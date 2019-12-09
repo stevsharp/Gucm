@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Gucm.Data.Context;
 using Common.Infrastructure.UnitOfWork;
+using System.Linq;
 
 namespace Gucm.Data
 {
@@ -18,7 +19,15 @@ namespace Gucm.Data
 
         public int SaveChanges() => _context.SaveChanges();
 
-        public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken)) => _context.SaveChangesAsync(cancellationToken);
+        public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
+        {
+            var changes = _context.GetChanges().ToList();
+
+            if (changes.Any())
+                _context.Set<ChangeLog>().AddRange(changes);
+
+            return _context.SaveChangesAsync(cancellationToken);
+        }
 
         public void UseExtenalUseTransaction(System.Data.Common.DbTransaction transaction) => _context.Database.UseTransaction(transaction);
     }

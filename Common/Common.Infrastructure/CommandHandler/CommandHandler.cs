@@ -26,12 +26,12 @@ namespace Gucm.Application
         {
             foreach (var error in message.ValidationResult.Errors)
                 _bus.RaiseEvent(new DomainNotification(message.MessageType, error.ErrorMessage));
-            
         }
 
         public async Task<bool> Commit(CancellationToken cancellationToken)
         {
             if (_notifications.HasNotifications()) return false;
+
             if (await _uow.SaveChangesAsync(cancellationToken) > 0) return true;
 
             _bus.RaiseEvent(new DomainNotification("Commit", "We had a problem during saving your data."));

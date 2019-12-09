@@ -1,0 +1,860 @@
+2019-12-09 13:56:08.359 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 13:56:09.751 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/  
+2019-12-09 13:56:09.944 +02:00 [INF] Request finished in 195.8171ms 404 
+2019-12-09 13:56:20.929 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger  
+2019-12-09 13:56:20.932 +02:00 [INF] Request finished in 3.044ms 301 
+2019-12-09 13:56:20.938 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/index.html  
+2019-12-09 13:56:21.101 +02:00 [INF] Request finished in 163.4798ms 200 text/html
+2019-12-09 13:56:21.130 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/swagger-ui-bundle.js  
+2019-12-09 13:56:21.133 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/swagger-ui-standalone-preset.js  
+2019-12-09 13:56:21.133 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/swagger-ui.css  
+2019-12-09 13:56:21.172 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2019-12-09 13:56:21.172 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2019-12-09 13:56:21.181 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2019-12-09 13:56:21.181 +02:00 [INF] Request finished in 51.676ms 200 application/javascript
+2019-12-09 13:56:21.181 +02:00 [INF] Request finished in 48.7545ms 200 application/javascript
+2019-12-09 13:56:21.181 +02:00 [INF] Request finished in 48.7008ms 200 text/css
+2019-12-09 13:56:21.396 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:13231/swagger/v1/swagger.json  
+2019-12-09 13:56:21.524 +02:00 [INF] Request finished in 127.699ms 200 application/json;charset=utf-8
+2019-12-09 13:56:33.457 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:13231/api/TestConntroller application/json;odata.metadata=minimal;odata.streaming=true 59
+2019-12-09 13:56:33.460 +02:00 [INF] CORS policy execution successful.
+2019-12-09 13:56:33.500 +02:00 [INF] Route matched with {action = "Create", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi)
+2019-12-09 13:56:33.631 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Create (Gucm.WebApi) with arguments (["Gucm.Application.ViewModel.CreateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 13:56:46.030 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:05:30.898 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:05:31.710 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:05:31.716 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:05:31.858 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:05:32.011 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:05:32.726 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:05:38.564 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:07:31.399 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:07:32.209 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:07:32.214 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:07:32.348 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:07:32.515 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:07:33.246 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:07:36.929 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:07:43.016 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 10664.720000000001ms
+2019-12-09 14:08:38.274 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:08:39.160 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:08:39.166 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:08:39.340 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:08:39.581 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:08:40.415 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:08:42.274 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:09:51.422 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:09:52.216 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:09:52.222 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:09:52.376 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:09:52.536 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:09:53.240 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:09:57.801 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:10:05.696 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 13316.4096ms
+2019-12-09 14:10:42.107 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:10:43.016 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:10:43.022 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:10:43.170 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:10:43.331 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:10:44.072 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:10:48.389 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:10:55.632 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 12459.013200000001ms
+2019-12-09 14:13:38.692 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:13:39.602 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:13:39.608 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:13:39.768 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:13:39.934 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:13:40.652 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:13:42.226 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:15:12.205 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 92433.9488ms
+2019-12-09 14:15:12.224 +02:00 [ERR] Collection was modified; enumeration operation may not execute.
+2019-12-09 14:15:12.297 +02:00 [INF] Request finished in 92696.5414ms 500 application/json
+2019-12-09 14:16:11.566 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:16:12.361 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:16:12.366 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:16:12.499 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:16:12.657 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:16:13.356 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:16:14.975 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:16:20.297 +02:00 [ERR] Failed executing DbCommand (29ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:e78efd2e-d240-4dd6-8b2d-fa5dfd7d8e53
+Error Number:207,State:1,Class:16
+2019-12-09 14:16:20.357 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:16:20.614 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 8112.0756ms
+2019-12-09 14:16:20.707 +02:00 [ERR] Database Update error
+2019-12-09 14:16:20.775 +02:00 [INF] Request finished in 8415.4915ms 500 application/json
+2019-12-09 14:16:35.973 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:16:35.973 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:16:35.974 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:16:35.976 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:16:40.353 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:16:57.282 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+UPDATE [dbo].[GdprTable] SET [Gdpr] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2019-12-09 14:17:47.512 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:17:48.334 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:17:48.340 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:17:48.485 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:17:48.648 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:17:49.347 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:17:55.645 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:18:14.482 +02:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:2b47e62e-11a4-43b9-a612-906711ad6608
+Error Number:207,State:1,Class:16
+2019-12-09 14:18:33.196 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:18:33.472 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 44984.1022ms
+2019-12-09 14:18:33.572 +02:00 [ERR] Database Update error
+2019-12-09 14:18:33.634 +02:00 [INF] Request finished in 45302.0423ms 500 application/json
+2019-12-09 14:20:02.419 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:20:03.297 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:20:03.304 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:20:03.449 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:20:03.625 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:20:04.452 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:20:06.438 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:20:14.570 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+UPDATE [dbo].[GdprTable] SET [Gdpr] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2019-12-09 14:23:52.184 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:23:53.015 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:23:53.022 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:23:53.157 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:23:53.322 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:23:54.010 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:23:56.003 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:24:14.706 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+UPDATE [dbo].[GdprTable] SET [Gdpr] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2019-12-09 14:24:14.742 +02:00 [INF] Executed action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21413.687100000003ms.
+2019-12-09 14:24:14.756 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-12-09 14:24:14.825 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 21666.0134ms
+2019-12-09 14:24:14.835 +02:00 [INF] Request finished in 21822.0226ms 200 application/json; charset=utf-8
+2019-12-09 14:24:21.834 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:24:21.835 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:24:21.836 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:24:21.849 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:24:24.933 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:24:53.089 +02:00 [ERR] Failed executing DbCommand (17,020ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:9ad89aa2-7e5e-4940-9c39-c92ea55af738
+Error Number:207,State:1,Class:16
+2019-12-09 14:24:53.132 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:24:53.420 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 31583.3437ms
+2019-12-09 14:24:53.506 +02:00 [ERR] Database Update error
+2019-12-09 14:24:53.517 +02:00 [INF] Request finished in 31682.9724ms 500 application/json
+2019-12-09 14:27:46.281 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:27:47.138 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:27:47.144 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:27:47.286 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:27:47.464 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:27:48.223 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:27:49.768 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:27:57.954 +02:00 [ERR] Failed executing DbCommand (10ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:c7dd6da4-d361-4e11-aa45-acb1e30fa17d
+Error Number:207,State:1,Class:16
+2019-12-09 14:27:59.341 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:27:59.614 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 12325.4558ms
+2019-12-09 14:27:59.703 +02:00 [ERR] Database Update error
+2019-12-09 14:27:59.774 +02:00 [INF] Request finished in 12639.3081ms 500 application/json
+2019-12-09 14:29:19.507 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:29:20.829 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:29:20.853 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:29:20.858 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:29:21.795 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:29:28.933 +02:00 [ERR] Failed executing DbCommand (13ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:c7dd6da4-d361-4e11-aa45-acb1e30fa17d
+Error Number:207,State:1,Class:16
+2019-12-09 14:29:28.935 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:29:29.157 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 8304.5671ms
+2019-12-09 14:29:29.241 +02:00 [ERR] Database Update error
+2019-12-09 14:29:29.241 +02:00 [INF] Request finished in 9734.5382ms 500 application/json
+2019-12-09 14:30:23.223 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:30:24.048 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:30:30.490 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:30:30.631 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:30:30.794 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:30:31.500 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:30:33.083 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:30:38.493 +02:00 [ERR] Failed executing DbCommand (12ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:884e8a52-e8bd-4664-a427-33cd1bc57279
+Error Number:207,State:1,Class:16
+2019-12-09 14:30:38.551 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:30:38.775 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 8141.5395000000008ms
+2019-12-09 14:31:43.303 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:31:44.185 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:31:44.191 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:31:44.341 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:31:44.537 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:31:45.279 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:31:51.204 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:31:57.333 +02:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:62044b5e-f16a-429c-b3fe-fe939802675d
+Error Number:207,State:1,Class:16
+2019-12-09 14:31:57.394 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:31:57.637 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 13293.1186ms
+2019-12-09 14:31:58.885 +02:00 [ERR] Database Update error
+2019-12-09 14:31:58.952 +02:00 [INF] Request finished in 14768.7093ms 500 application/json
+2019-12-09 14:33:10.761 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:33:11.602 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:33:11.608 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:33:11.747 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:33:11.908 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:33:12.640 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:33:14.350 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:34:57.217 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:34:58.012 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:34:58.018 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:34:58.156 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:34:58.312 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:34:59.019 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:35:01.541 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:35:21.563 +02:00 [ERR] Failed executing DbCommand (14ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:7caf84ec-eae3-41ab-8775-5458220bb194
+Error Number:207,State:1,Class:16
+2019-12-09 14:35:21.649 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:37:18.590 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:37:19.424 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:37:19.429 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:37:19.572 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:37:19.747 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:37:20.449 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:37:22.834 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:37:30.434 +02:00 [ERR] Failed executing DbCommand (13ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:8ae22f64-85ae-4321-b0b1-e52a30678ec3
+Error Number:207,State:1,Class:16
+2019-12-09 14:37:30.610 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Invalid column name 'ID'.
+Invalid column name 'ID'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:39:27.798 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:39:28.610 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:39:28.616 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:39:28.765 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:39:28.924 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:39:40.417 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:39:41.941 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:39:48.204 +02:00 [ERR] Failed executing DbCommand (46ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ChangeLogID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ChangeLogID] = scope_identity();
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:0e9fe374-0529-4678-859f-e6037020c202
+Error Number:241,State:1,Class:16
+2019-12-09 14:39:48.266 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'Gucm.Data.Context.GucmDataContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Conversion failed when converting date and/or time from character string.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-12-09 14:40:57.064 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:40:57.918 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:40:57.926 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:40:58.073 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:40:58.242 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:41:02.884 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:41:04.362 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:41:09.331 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 128) (DbType = AnsiString), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ChangeLogID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ChangeLogID] = scope_identity();
+2019-12-09 14:41:09.391 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+UPDATE [dbo].[GdprTable] SET [Gdpr] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2019-12-09 14:41:12.495 +02:00 [INF] Executed action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14248.271200000001ms.
+2019-12-09 14:41:12.508 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-12-09 14:41:12.574 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 14498.2086ms
+2019-12-09 14:41:12.584 +02:00 [INF] Request finished in 14668.2867ms 200 application/json; charset=utf-8
+2019-12-09 14:43:12.474 +02:00 [INF] User profile is available. Using 'C:\Users\Spyros\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-12-09 14:43:13.310 +02:00 [INF] Request starting HTTP/1.1 PUT http://localhost:13231/api/TestConntroller/1 application/json;odata.metadata=minimal;odata.streaming=true 29
+2019-12-09 14:43:13.317 +02:00 [INF] CORS policy execution successful.
+2019-12-09 14:43:13.461 +02:00 [INF] Route matched with {action = "Update", controller = "TestConntroller"}. Executing action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi)
+2019-12-09 14:43:13.627 +02:00 [INF] Executing action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) with arguments (["1","Gucm.Application.ViewModel.UpdateGdprCommand"]) - Validation state: "Valid"
+2019-12-09 14:43:14.351 +02:00 [INF] Entity Framework Core 2.2.4-servicing-10062 initialized 'GucmDataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MaxPoolSize=128 CommandTimeout=60 
+2019-12-09 14:43:17.976 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='60']
+SELECT TOP(1) [e].[Id], [e].[Gdpr]
+FROM [dbo].[GdprTable] AS [e]
+WHERE [e].[Id] = @__get_Item_0
+2019-12-09 14:43:24.967 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = DateTime), @p1='?' (Size = 128) (DbType = AnsiString), @p2='?' (Size = 8000) (DbType = AnsiString), @p3='?' (Size = 255) (DbType = AnsiString), @p4='?' (Size = 8000) (DbType = AnsiString), @p5='?' (Size = 128) (DbType = AnsiString), @p6='?' (Size = 25) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+INSERT INTO [dbo].[ChangeLog] ([ChangeDate], [ClassName], [CurrentValue], [Key], [OriginalValue], [PropertyName], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+SELECT [ChangeLogID]
+FROM [dbo].[ChangeLog]
+WHERE @@ROWCOUNT = 1 AND [ChangeLogID] = scope_identity();
+2019-12-09 14:43:25.005 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='60']
+SET NOCOUNT ON;
+UPDATE [dbo].[GdprTable] SET [Gdpr] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2019-12-09 14:43:25.027 +02:00 [INF] Executed action method Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11395.0526ms.
+2019-12-09 14:43:25.038 +02:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2019-12-09 14:43:25.105 +02:00 [INF] Executed action Gucm.WebApi.Controllers.TestConntroller.Update (Gucm.WebApi) in 11641.922ms
+2019-12-09 14:43:25.115 +02:00 [INF] Request finished in 11806.5833ms 200 application/json; charset=utf-8
