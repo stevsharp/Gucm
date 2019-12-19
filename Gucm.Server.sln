@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.902
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scr", "scr", "{8D895F05-1F2E-471F-B862-EC06100C2027}"
 EndProject
@@ -52,7 +52,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gucm.Api.Integration.Testin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedKernel", "Shared\SharedKernel\SharedKernel.csproj", "{4CA5480F-917C-4D47-AFC4-C40556154D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.SignalR", "Common\Common.SignalR\Common.SignalR.csproj", "{8836173A-FBF2-4A42-817A-EF3B748B9179}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{DE39F3F1-88F8-489B-A6BB-0F5313EC16A1}"
+	ProjectSection(SolutionItems) = preProject
+		CreateChangeLog.sql = CreateChangeLog.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,10 +122,6 @@ Global
 		{4CA5480F-917C-4D47-AFC4-C40556154D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CA5480F-917C-4D47-AFC4-C40556154D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CA5480F-917C-4D47-AFC4-C40556154D14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8836173A-FBF2-4A42-817A-EF3B748B9179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8836173A-FBF2-4A42-817A-EF3B748B9179}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8836173A-FBF2-4A42-817A-EF3B748B9179}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8836173A-FBF2-4A42-817A-EF3B748B9179}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,7 +148,6 @@ Global
 		{C8856110-029A-4056-BC5E-54BBFA2F94F3} = {C71EFB0C-D2F0-497C-8EE7-259392179660}
 		{48773D82-8397-49DC-94FE-FE08DAEB8C31} = {C71EFB0C-D2F0-497C-8EE7-259392179660}
 		{4CA5480F-917C-4D47-AFC4-C40556154D14} = {8D895F05-1F2E-471F-B862-EC06100C2027}
-		{8836173A-FBF2-4A42-817A-EF3B748B9179} = {B768FD7B-C8F7-4D29-96FB-AC11EB42CE19}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE6DFA83-F806-4B02-8F22-66DD732888B0}

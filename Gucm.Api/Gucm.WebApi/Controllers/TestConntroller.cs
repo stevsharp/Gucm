@@ -33,14 +33,12 @@ namespace Gucm.WebApi.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Update(int id , UpdateGdprCommand request)
         {
-            //if (id != request.Id)
-            //    return BadRequest();
+            if (id != request.Id)
+                return BadRequest();
 
-            //var result = await _mediator.Send(request);
+            await _mediator.SendCommand(request);
 
-            //return NoContentOrBadRequest(result);
-
-            return Ok();
+            return Response(request);
         }
 
         [HttpDelete("{id}")]
