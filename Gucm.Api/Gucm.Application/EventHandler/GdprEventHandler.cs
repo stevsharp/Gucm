@@ -1,4 +1,5 @@
 ﻿using Gucm.Application.Events;
+using MassTransit;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
@@ -7,11 +8,16 @@ namespace Gucm.Application.EventHandler
 {
     public class GdprEventHandler : INotificationHandler<GdprCreated>
     {
-        public Task Handle(GdprCreated notification, CancellationToken cancellationToken)
+        private readonly IBus _bus;
+
+        public GdprEventHandler(IBus bus)
         {
+            _bus = bus;
+        }
 
-
-            return Task.CompletedTask;
+        public async Task Handle(GdprCreated notification, CancellationToken cancellationToken)
+        {
+            await _bus.Publish<GdprCreated>(notification);   
         }
     }
 }

@@ -2,10 +2,6 @@
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 
 namespace Gucm.Application
 {
@@ -14,7 +10,7 @@ namespace Gucm.Application
         public static IServiceCollection RegisterApplicationServices(this IServiceCollection services, IConfiguration Configuration)
         {
             services.AddMediatR(typeof(CreateGdprCommand));
-
+            
             return services;
         }
     }

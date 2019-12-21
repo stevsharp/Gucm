@@ -37,6 +37,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Common.Api\Gucm.Api.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Mq\Common.Mq.csproj" />
     <ProjectReference Include="..\..\Common\Common.ServiceBus\Common.ServiceBus.csproj" />
     <ProjectReference Include="..\Gucm.Application\Gucm.Application.csproj" />
     <ProjectReference Include="..\Gucm.Data\Gucm.Data.csproj" />

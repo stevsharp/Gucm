@@ -4,6 +4,7 @@ using Common.Api.Middlewares;
 using Common.Api.Validation;
 using Common.Infrastructure.Bus;
 using Common.Infrastructure.Notifications;
+using Common.Mq;
 using Common.ServiceBus;
 using FluentValidation.AspNetCore;
 using Gucm.Application;
@@ -92,7 +93,7 @@ namespace Gucm.WebApi
             services.AddScoped<IMediatorHandler, InMemoryBus>();
             services.RegisterDataServices(Configuration);
             services.RegisterApplicationServices(Configuration);
-
+            services.RegisterMqServices(Configuration);
             services.AddSignalR();
 
 
